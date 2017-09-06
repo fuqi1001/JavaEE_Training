@@ -1,0 +1,6 @@
+main/java/net/antra/cs/domain/CourseStudentAssoc.class
+main/java/net/antra/cs/domain/Student.class
+main/java/net/antra/cs/domain/Teacher.class
+main/java/net/antra/test/TestConnection.class
+main/java/net/antra/test/TestApp.class
+main/java/net/antra/cs/domain/Course.class
