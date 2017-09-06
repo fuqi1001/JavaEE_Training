@@ -16,7 +16,7 @@ public class TestConnection {
         //用户名（我是用的端丽软账户root）
         final String name = "root";
         //密码
-        final String password = "FUqi217783";
+        final String password = "123";
         //创建//数据库表达式
         Statement stmt = null;
         //创建结果集
