@@ -16,6 +16,6 @@
     <bean id="demoService" class="main.java.test.service.DemoServiceImpl" >
 
     </bean>
-
+     <!--bean class="main.java.test.DAO.testPostProcessor" /-->
 
 </beans>
