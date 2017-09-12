@@ -17,5 +17,8 @@
 
     </bean>
      <!--bean class="main.java.test.DAO.testPostProcessor" /-->
+    <bean id="textEditor" class="main.java.test.DAO.TextEditor" >
+        <constructor-arg ref = "spellChecker"/>
+    </bean>
 
 </beans>
