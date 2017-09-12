@@ -4,7 +4,7 @@ package main.java.test.DAO;
 import main.java.test.DAO.HelloService;
 import org.springframework.stereotype.Repository;
 
-//@Repository
+@Repository
 public class HelloServiceImpl2 implements HelloService {
 
     @Override

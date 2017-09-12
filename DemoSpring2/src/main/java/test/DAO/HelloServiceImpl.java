@@ -1,7 +1,10 @@
 package main.java.test.DAO;
 
 import main.java.test.DAO.HelloService;
+import org.springframework.stereotype.Repository;
 
+
+@Repository
 public class HelloServiceImpl implements HelloService {
     @Override
     public void sayHello() {

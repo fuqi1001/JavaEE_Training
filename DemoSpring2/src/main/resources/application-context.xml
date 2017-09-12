@@ -10,6 +10,12 @@
 
     <!-- id 表示组件的名字，class表示组件类 -->
     <context:component-scan base-package="main.java.test" />
+    <context:component-scan base-package="main.java.test.service" />
     <bean id="helloService" class="main.java.test.DAO.HelloServiceImpl" />
+
+    <bean id="demoService" class="main.java.test.service.DemoServiceImpl" >
+
+    </bean>
+
 
 </beans>
