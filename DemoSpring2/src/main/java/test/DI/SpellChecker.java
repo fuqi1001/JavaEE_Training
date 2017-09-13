@@ -1,4 +1,4 @@
-package main.java.test.DAO;
+package main.java.test.DI;
 
 
 import org.springframework.stereotype.Component;

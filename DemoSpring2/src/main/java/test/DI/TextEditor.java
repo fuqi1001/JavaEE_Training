@@ -1,6 +1,7 @@
-package main.java.test.DAO;
+package main.java.test.DI;
 
 
+import main.java.test.DI.SpellChecker;
 
 public class TextEditor {
     private SpellChecker spellChecker;
