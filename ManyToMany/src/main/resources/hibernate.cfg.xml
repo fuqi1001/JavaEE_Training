@@ -14,5 +14,7 @@
         <property name="format_sql">true</property>
         <mapping resource="main/resources/com/jim/stock/Stock.hbm.xml" />
         <mapping resource="main/resources/com/jim/stock/Category.hbm.xml" />
+        <mapping class="main.java.com.jim.stock.Stock2" />
+        <mapping class="main.java.com.jim.stock.Category2"/>
     </session-factory>
 </hibernate-configuration>
