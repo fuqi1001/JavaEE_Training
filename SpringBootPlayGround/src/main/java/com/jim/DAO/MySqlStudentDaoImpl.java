@@ -30,7 +30,7 @@ public class MySqlStudentDaoImpl implements StudentDao{
 
 
     @Override
-    public Collection<Student> getAllStudents() {
+    public List<Student> getAllStudents() {
         List<Student> students = jdbcTemplate.query("SELECT id, name, course FROM students", new StudentRowMapper());
         return students;
     }

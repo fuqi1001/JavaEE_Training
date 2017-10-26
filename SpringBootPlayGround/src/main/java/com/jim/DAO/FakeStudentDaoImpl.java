@@ -4,9 +4,7 @@ import com.jim.Entity.Student;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 
 @Repository
@@ -26,8 +24,9 @@ public class FakeStudentDaoImpl implements StudentDao {
     }
 
     @Override
-    public Collection<Student> getAllStudents() {
-        return this.students.values();
+    public List<Student> getAllStudents() {
+        //return this.students.values();
+        return new ArrayList<>();
     }
 
     @Override

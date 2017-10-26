@@ -3,9 +3,10 @@ package com.jim.DAO;
 import com.jim.Entity.Student;
 
 import java.util.Collection;
+import java.util.List;
 
 public interface StudentDao {
-    Collection<Student> getAllStudents();
+    List<Student> getAllStudents();
 
     Student getStudentById(int id);
 

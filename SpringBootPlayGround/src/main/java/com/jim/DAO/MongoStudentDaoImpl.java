@@ -7,13 +7,14 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 
 @Repository
 @Qualifier("MongoData")
 public class MongoStudentDaoImpl implements StudentDao {
     @Override
-    public Collection<Student> getAllStudents() {
+    public List<Student> getAllStudents() {
         return new ArrayList<Student>(){
             {add(new Student(1, "Mario", "Nothing"));}
         };
