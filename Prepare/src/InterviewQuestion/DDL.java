@@ -1,7 +1,5 @@
 package InterviewQuestion;
 
-import sun.jvm.hotspot.debugger.windbg.DLL;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -71,16 +69,6 @@ public class DDL {
     }
 
 
-    public String reverse(String sent) {
-        String[] words = sent.split(" ");
-        StringBuilder sb = new StringBuilder();
-        for(int i = words.length - 1; i >= 0; i--) {
-            sb.append(words).append(" ");
-        }
-        String res = sb.toString();
-        System.out.println(res);
-        return res.substring(0, res.length());
-    }
     public static void main(String[] args) {
         DDL dl = new DDL();
         dl.append(4);
@@ -89,8 +77,6 @@ public class DDL {
         dl.append(8);
         dl.insert(dl.head, 5);
         dl.printList();
-
-        System.out.println(dl.reverse("This     is a sent"));
 
     }
 }

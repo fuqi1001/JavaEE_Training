@@ -9,16 +9,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class DemoAspect {
     @Before("execution(* *.save*(..))")
-    public void getNameAdvice(JoinPoint joinPoint){
+    public void getNameAdvice(JoinPoint joinPoint) {
         System.out.println("before save*");
         Object[] signatureArgs = joinPoint.getArgs();
-        for (Object signatureArg: signatureArgs) {
+        for (Object signatureArg : signatureArgs) {
             System.out.println("Arg: " + signatureArg);
         }
-    }
-    @AfterThrowing("execution(* *.test1234*(..))")
-    public void afterTh(){
-        System.out.println("AOP for test1234");
     }
     @After("execution(* *.save*(..))")
     public void afterMethod(){
@@ -35,6 +31,19 @@ public class DemoAspect {
         }
         System.out.println("After invoking save() method. Return value="+value);
         return value;
+    }
+
+    @Before("execution(* *.test1234*(..))")
+    public void doSomethingBefore() {
+        System.out.println("Before test1234()");
+    }
+    @After("execution(* *.test1234*(..))")
+    public void doSomethingAfter() {
+        System.out.println("After test1234()");
+    }
+    @AfterThrowing("execution(* *.test1234*(..))")
+    public void afterTh(){
+        System.out.println("AOP throw for test1234");
     }
 
 }
